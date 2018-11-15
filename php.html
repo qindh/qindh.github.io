@@ -226,230 +226,230 @@ header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Aria
 </head>
 <body class='typora-export os-windows' >
 <div  id='write'  class = 'is-node'>
-  <pre>
-isset()     # 判断变量是否定义且不为null
-unset()     # 销毁变量
-$_GET[]     # 获得url参数
-$_POST[]    # 获得表单参数
-$_REQUEST[] # 获得get,post 参数
-$_SERVER[]  # 获得 服务器和执行环境信息
-define()    # 定义个常量
-const()     # 定义一个局部常量 受命名空间的影响
-constant()  # 取值
-defined()   # 判断全局常量
-PHP_VERSION # 获取PHP版本号
-PHP_OS      # 获取系统环境
-PHP_INT_MAX # 获取PHP环境中最大的整数
-M_PI        # π
-<strong>DIR</strong>	    # 查看当前文件所在的绝对路径
-<strong>FILE</strong>	  # 获取当前文件的绝对路径
-<strong>LINE</strong>	  # 查看当前行
-<!-- 8大数据类型 -->
-int float string array boolean null source Object
+
+isset()     # 判断变量是否定义且不为null<br />
+unset()     # 销毁变量<br />
+$_GET[]     # 获得url参数<br />
+$_POST[]    # 获得表单参数<br />
+$_REQUEST[] # 获得get,post 参数<br />
+$_SERVER[]  # 获得 服务器和执行环境信息<br />
+define()    # 定义个常量<br />
+const()     # 定义一个局部常量 受命名空间的影响<br />
+constant()  # 取值<br />
+defined()   # 判断全局常量<br />
+PHP_VERSION # 获取PHP版本号<br />
+PHP_OS      # 获取系统环境<br />
+PHP_INT_MAX # 获取PHP环境中最大的整数<br />
+M_PI        # π<br />
+<strong>DIR</strong>	    # 查看当前文件所在的绝对路径<br />
+<strong>FILE</strong>	  # 获取当前文件的绝对路径<br />
+<strong>LINE</strong>	  # 查看当前行<br />
+<!-- 8大数据类型 --><br />
+int float string array boolean null source Object<br />
 <!--  -->
-decbin      # 10进制转二进制 (01)
-decoct()    # 10 --  8 进制 (0~7)
-dechex()    # 10 --  16 进制 (0-f)</p><p>bindec()    # 2 -- 10
-octdec()    # 8 -- 10
-hexdec()    # 16 -- 10
-&amp;&amp;          # 逻辑与
-||          # 逻辑或
-!           # 逻辑非
-&amp;           # 按位与   只有两个都是1，按位与运算结果才是1
-|           # 按位或   只有两个都是0，按位或运算结果才是0
-~           # 按位取反|按位非 0~1  1~0  [待验证]
-^           # 按位异或 相同为0，不同为1
-if else     # 流程控制
-switch case # 分支
-do while    # 先执行后判断
-while do    # 先判断后执行
-while 
-for         # 循环
-continue	  # 跳转本次循环
-break	      # 结束当前循环体
-function fn (){}         # 函数定义
-$fn = function () {}     # 匿名函数
-function_exists	         # 判断函数是否存在
-func_get_arg(n)          # 取函数中的实际参数 n 代表第几个
-func_get_args()          # 取函数中的所有实际参数，以数组方式返回
-func_num_args()          # 获取函数中实际参数的个数
-getcwd()                 # 获取当前路径
-trim($str,&#39;b&#39;)           # 去除左右两边的空格
-ltrim	                   # 去除左边空格
-rtrim	                   # 去除右边空格
-str_pad($str,10,&#39;.&#39;)     # 填充到指定长度
-str_repeat($str,10)      # 重复指定次数
-implode	                 # 数组转字符串
-explode	                 # 分割字符串为数组
-str_split                # 分割字符串,以指定的字节数来分割
-substr                   # 截取字符串
-strrchr                  # 截取字符串从后面开始
-str_replace              # 字符串替换
-substr_replace           # 字符串截取替换
-strpos                   # 查找字符串的位置(下标)
-strrpos                  # 查找字符串的位置(有右侧查找)
-strtolower               # 转小写
-strtoupper               # 转大写
-lcfirst                  # 首字母转小写
-ucfirst                  # 首字母转大写
-htmlspecialchars         # 将html标签&gt; &lt; 转成实体字符  &gt; &lt;  一般用于过滤xss攻击
-htmlspecialchars_decode  # 将实体字符转成 html 标签
-foreach                  # 循环,遍历
-mt_rand                  # 随机一个正整数 比rand更快。</p><h2><a name='header-n26' class='md-header-anchor '></a>数组指针</h2><p>current()                # 获取当前指针指向的值
-next()                   # 将数组中指针下移,后移
-prev()                   # 将数组中指针上移,前移
-key()                    # 获取当前指针的数组下标
-end()                    # 将指针移动在数组的最后一位 并返回其值
-reset()                  # 将数组中指针的位置重置
-max()                    # 最大值
-min()                    # 取最小值</p><h6><a name='header-n83' class='md-header-anchor '></a>############### 常用数组函数</h6><p>count()                  # 计算数组个数,对象中属性的个数
-in_array(&#39;值&#39;,数组)       # 判断值是否在数组中
-is_array()               # 判断是否是数组
-range()                  # 生成数组序列
-array_values()           # 取数组的值
-array_keys()             # 取素组的健
-array_push()             # 追加到数组的末尾
-array_pop()              # 删除数组中最后个元素
-array_reverse()          # 数组反转
-array_search()           # 返回查找内容的下标
-array_key_exists()       # 判断数组中是否存在某一个key
-array_merge()            # 数组合并(重置下标)     +  (不重置下标)
-array_rand()             # 随机取出数组中一个或者多个
-sort()                   # 排序
-ksort()                  # 按下标排序
-asort()                  # 按值排序，保留下标
-arsort()                 # 倒叙
-exit()                   # 退出
-die()                    # 死亡
-die;                     # 打断</p><h6><a name='header-n105' class='md-header-anchor '></a>########## mysql</h6><p>mysqli_connect()          # 连接数据库 [$host:$port,$user,$password]
-mysqli_connect_error()    # 连接异常错误抛出
-mysqli_close()            # 关闭数据库
-mysqli_select_db()        # 选择数据库
-mysqli_set_charset()      # 设置字符集
-mysqli_query()            # 执行SQL 语句
-mysqli_free_result()      # 释放结果集
-mysqli_fetch_row()        # 从结果集中取出一条记录
-mysqli_fetch_assoc()      # 取出一条索引记录
-mysqli_fetch_array()      # 取出一条关联+索引记录,
-mysqli_fetch_all()        # 取出所有的记录(关联+索引)
-mysqli_num_rows()         # 获取结果集中的记录数
-mysqli_affected_rows()    # 获取受影响行数
+decbin      # 10进制转二进制 (01)<br />
+decoct()    # 10 --  8 进制 (0~7)<br />
+dechex()    # 10 --  16 进制 (0-f)</p><p>bindec()    # 2 -- 10<br />
+octdec()    # 8 -- 10<br />
+hexdec()    # 16 -- 10<br />
+&amp;&amp;          # 逻辑与<br />
+||          # 逻辑或<br />
+!           # 逻辑非<br />
+&amp;           # 按位与   只有两个都是1，按位与运算结果才是1<br />
+|           # 按位或   只有两个都是0，按位或运算结果才是0<br />
+~           # 按位取反|按位非 0~1  1~0  [待验证]<br />
+^           # 按位异或 相同为0，不同为1<br />
+if else     # 流程控制<br />
+switch case # 分支<br />
+do while    # 先执行后判断<br />
+while do    # 先判断后执行<br />
+while <br />
+for         # 循环<br />
+continue	  # 跳转本次循环<br />
+break	      # 结束当前循环体<br />
+function fn (){}         # 函数定义<br />
+$fn = function () {}     # 匿名函数<br />
+function_exists	         # 判断函数是否存在<br />
+func_get_arg(n)          # 取函数中的实际参数 n 代表第几个<br />
+func_get_args()          # 取函数中的所有实际参数，以数组方式返回<br />
+func_num_args()          # 获取函数中实际参数的个数<br />
+getcwd()                 # 获取当前路径<br />
+trim($str,&#39;b&#39;)           # 去除左右两边的空格<br />
+ltrim	                   # 去除左边空格<br />
+rtrim	                   # 去除右边空格<br />
+str_pad($str,10,&#39;.&#39;)     # 填充到指定长度<br />
+str_repeat($str,10)      # 重复指定次数<br />
+implode	                 # 数组转字符串<br />
+explode	                 # 分割字符串为数组<br />
+str_split                # 分割字符串,以指定的字节数来分割<br />
+substr                   # 截取字符串<br />
+strrchr                  # 截取字符串从后面开始<br />
+str_replace              # 字符串替换<br />
+substr_replace           # 字符串截取替换<br />
+strpos                   # 查找字符串的位置(下标)<br />
+strrpos                  # 查找字符串的位置(有右侧查找)<br />
+strtolower               # 转小写<br />
+strtoupper               # 转大写<br />
+lcfirst                  # 首字母转小写<br />
+ucfirst                  # 首字母转大写<br />
+htmlspecialchars         # 将html标签&gt; &lt; 转成实体字符  &gt; &lt;  一般用于过滤xss攻击<br />
+htmlspecialchars_decode  # 将实体字符转成 html 标签<br />
+foreach                  # 循环,遍历<br />
+mt_rand                  # 随机一个正整数 比rand更快。</p><h2><a name='header-n26' class='md-header-anchor '></a>数组指针</h2><p>current()                # 获取当前指针指向的值<br />
+next()                   # 将数组中指针下移,后移<br />
+prev()                   # 将数组中指针上移,前移<br />
+key()                    # 获取当前指针的数组下标<br />
+end()                    # 将指针移动在数组的最后一位 并返回其值<br />
+reset()                  # 将数组中指针的位置重置<br />
+max()                    # 最大值<br />
+min()                    # 取最小值</p><h6><a name='header-n83' class='md-header-anchor '></a>############### 常用数组函数</h6><p>count()                  # 计算数组个数,对象中属性的个数<br />
+in_array(&#39;值&#39;,数组)       # 判断值是否在数组中<br />
+is_array()               # 判断是否是数组<br />
+range()                  # 生成数组序列<br />
+array_values()           # 取数组的值<br />
+array_keys()             # 取素组的健<br />
+array_push()             # 追加到数组的末尾<br />
+array_pop()              # 删除数组中最后个元素<br />
+array_reverse()          # 数组反转<br />
+array_search()           # 返回查找内容的下标<br />
+array_key_exists()       # 判断数组中是否存在某一个key<br />
+array_merge()            # 数组合并(重置下标)     +  (不重置下标)<br />
+array_rand()             # 随机取出数组中一个或者多个<br />
+sort()                   # 排序<br />
+ksort()                  # 按下标排序<br />
+asort()                  # 按值排序，保留下标<br />
+arsort()                 # 倒叙<br />
+exit()                   # 退出<br />
+die()                    # 死亡<br />
+die;                     # 打断</p><h6><a name='header-n105' class='md-header-anchor '></a>########## mysql</h6><p>mysqli_connect()          # 连接数据库 [$host:$port,$user,$password]<br />
+mysqli_connect_error()    # 连接异常错误抛出<br />
+mysqli_close()            # 关闭数据库<br />
+mysqli_select_db()        # 选择数据库<br />
+mysqli_set_charset()      # 设置字符集<br />
+mysqli_query()            # 执行SQL 语句<br />
+mysqli_free_result()      # 释放结果集<br />
+mysqli_fetch_row()        # 从结果集中取出一条记录<br />
+mysqli_fetch_assoc()      # 取出一条索引记录<br />
+mysqli_fetch_array()      # 取出一条关联+索引记录,<br />
+mysqli_fetch_all()        # 取出所有的记录(关联+索引)<br />
+mysqli_num_rows()         # 获取结果集中的记录数<br />
+mysqli_affected_rows()    # 获取受影响行数<br />
 mysqli_insert_id          # 获取插入后的主键[等待验证]</p><h5><a name='header-n107' class='md-header-anchor '></a>操作目录</h5><p>mkdir()                   # 创建文件夹 <br/>
-rmdir()                   # 删除文件夹
-chmod()                   # 设置权限
-fileperms()               # 获取文件或者目录的权限值<br/>
-isdir()                   # 判断是否为目录
-rename()                  # 重命名目录或者文件
-opendir()                 # 打开目录,返回一个句柄(source) $handle
-readdir()                 # 读取目录
-closedir()                # 关闭打开目录的句柄
-iconv()                   # 转换字符编码   iconv(&#39;gbk&#39;,&#39;utf8//ignore&#39;,$str)
-file_exists()             # 判断文件或者目录是否存在</p><h2><a name='header-n123' class='md-header-anchor '></a>操作文件</h2><p>fopen()                   # 打开文件 
-r r+ w  w+ a a+ x x+
-[r] 读
-[r+] 读写
-[w] 写,如果文件不存在将尝试创建
-[w+] 读写,如果文件不存在将尝试创建
-[a] 追加,如果文件不存在将尝试创建
-[a+] 追加,如果文件不存在将尝试创建
-[x] 创建并以写入方式打开,将文件指针指向文件头,仅能用于本地文件,如果文件已经存在将以警告形式提醒
-[x+]创建并以读写入方式打开,将文件指针指向文件头,仅能用于本地文件,如果文件已经存在将以警告形式提醒
-fclose()                  # 关闭文件句柄
-fread(file,length)        # 以length 长度来读取文件
-fgets()                   # 一次读取一行[PHP_EOL],一次最多读1K,      <br/>
-file_get_contents()       # 读取文件或者Url的全部内容
-[了解curl]                # 模拟登陆,模拟表单提交[了解,有兴趣去实践]
-fwrite()                  # 写文件
-copy()                    # 复制
-unlink()                  # 删除文件
-filesize()                # 获取文件大小
-is_writable               # 判断文件是否可写
-is_readable               # 判断文件是否可读
-feof()                    # 判断文件指针是否是末尾
-filectime()               # 获取文件创建时间
-fileatime()               # 获取文件最后访问时间
-filemtime()               # 获取文件最后修改时间</p><h6><a name='header-n161' class='md-header-anchor '></a>url</h6><p>protocol                  # http[80] https[443] ssl
-hostname                  # localhost
-port                      # 端口号
-?                         # query
-#                        # 锚点</p><h6><a name='header-n168' class='md-header-anchor '></a>############## 状态码</h6><p>200                       # 成功
-301                       # 永久重定向
-302                       # 临时重定向  [.htaccess]
-304                       # [去翻笔记.核心编程第三天]
-400
-401
-403
-404
-408
-500
-503</p><h6><a name='header-n181' class='md-header-anchor '></a>###################### gd</h6><p>imagecreatefromjpeg()     # 创建JPEG 画布,GIF,PNG等使用方式一致
-imagecreatefromgif()
-imagecreatetruecolor()    # 创建一个真彩色[24位] rgb[255,255,255]
-imagedestroy()            # 销毁画布
-imagecolorallocate()      # 分配颜色
-imagefill()               # 颜色填充
-imagejpeg()               # 生成JPEG
-imagestring()             # 水平的画一行字符串
-imagefontwidth()          # 返回画布字体宽
-imagefontheight()         # 返回画布字体高
-imagefilledrectangle()    # 画一矩形并填充
-imagettftext()            # 用[XX]字体向图像写入文本
-imagecolorallocatealpha() # 为图像分配透明颜色  0不透明 127 透明
-imagecopyresampled()      # 将一幅图像中的一块正方形区域拷贝到另一个图像中，平滑地插入像素值</p><h6><a name='header-n197' class='md-header-anchor '></a>###################### 文件上传</h6><p>$_FILES[&#39;upLoadFile&#39;]               # 文件上传
-$_FILES[&#39;upLoadFile&#39;][&#39;name&#39;]       # 文件名 
-$_FILES[&#39;upLoadFile&#39;][&#39;tmp_name&#39;]   # 临时文件路径
-$_FILES[&#39;upLoadFile&#39;][&#39;size&#39;]       # 文件大小
-$_FILES[&#39;upLoadFile&#39;][&#39;type&#39;]       # 上传的文件类型
+rmdir()                   # 删除文件夹<br />
+chmod()                   # 设置权限<br />
+fileperms()               # 获取文件或者目录的权限值<br/><br />
+isdir()                   # 判断是否为目录<br />
+rename()                  # 重命名目录或者文件<br />
+opendir()                 # 打开目录,返回一个句柄(source) $handle<br />
+readdir()                 # 读取目录<br />
+closedir()                # 关闭打开目录的句柄<br />
+iconv()                   # 转换字符编码   iconv(&#39;gbk&#39;,&#39;utf8//ignore&#39;,$str)<br />
+file_exists()             # 判断文件或者目录是否存在</p><h2><a name='header-n123' class='md-header-anchor '></a>操作文件</h2><p>fopen()                   # 打开文件 <br />
+r r+ w  w+ a a+ x x+<br />
+[r] 读<br />
+[r+] 读写<br />
+[w] 写,如果文件不存在将尝试创建<br />
+[w+] 读写,如果文件不存在将尝试创建<br />
+[a] 追加,如果文件不存在将尝试创建<br />
+[a+] 追加,如果文件不存在将尝试创建<br />
+[x] 创建并以写入方式打开,将文件指针指向文件头,仅能用于本地文件,如果文件已经存在将以警告形式提醒<br />
+[x+]创建并以读写入方式打开,将文件指针指向文件头,仅能用于本地文件,如果文件已经存在将以警告形式提醒<br />
+fclose()                  # 关闭文件句柄<br />
+fread(file,length)        # 以length 长度来读取文件<br />
+fgets()                   # 一次读取一行[PHP_EOL],一次最多读1K,      <br />
+file_get_contents()       # 读取文件或者Url的全部内容<br />
+[了解curl]                # 模拟登陆,模拟表单提交[了解,有兴趣去实践]<br />
+fwrite()                  # 写文件<br />
+copy()                    # 复制<br />
+unlink()                  # 删除文件<br />
+filesize()                # 获取文件大小<br />
+is_writable               # 判断文件是否可写<br />
+is_readable               # 判断文件是否可读<br />
+feof()                    # 判断文件指针是否是末尾<br />
+filectime()               # 获取文件创建时间<br />
+fileatime()               # 获取文件最后访问时间<br />
+filemtime()               # 获取文件最后修改时间</p><h6><a name='header-n161' class='md-header-anchor '></a>url</h6><p>protocol               # http[80] https[443] ssl<br />
+hostname                  # localhost<br />
+port                      # 端口号<br />
+?                         # query<br />
+#                        # 锚点</p><h6><a name='header-n168' class='md-header-anchor '></a>############## 状态码</h6><p>200                   # 成功<br />
+301                       # 永久重定向<br />
+302                       # 临时重定向  [.htaccess]<br />
+304                       # [去翻笔记.核心编程第三天]<br />
+400<br />
+401<br />
+403<br />
+404<br />
+408<br />
+500<br />
+503</p><h6><a name='header-n181' class='md-header-anchor '></a>###################### gd</h6><p>imagecreatefromjpeg()     # 创建JPEG 画布,GIF,PNG等使用方式一致<br />
+imagecreatefromgif()<br />
+imagecreatetruecolor()    # 创建一个真彩色[24位] rgb[255,255,255]<br />
+imagedestroy()            # 销毁画布<br />
+imagecolorallocate()      # 分配颜色<br />
+imagefill()               # 颜色填充<br />
+imagejpeg()               # 生成JPEG<br />
+imagestring()             # 水平的画一行字符串<br />
+imagefontwidth()          # 返回画布字体宽<br />
+imagefontheight()         # 返回画布字体高<br />
+imagefilledrectangle()    # 画一矩形并填充<br />
+imagettftext()            # 用[XX]字体向图像写入文本<br />
+imagecolorallocatealpha() # 为图像分配透明颜色  0不透明 127 透明<br />
+imagecopyresampled()      # 将一幅图像中的一块正方形区域拷贝到另一个图像中，平滑地插入像素值</p><h6><a name='header-n197' class='md-header-anchor '></a>###################### 文件上传</h6><p>$_FILES[&#39;upLoadFile&#39;]               # 文件上传<br />
+$_FILES[&#39;upLoadFile&#39;][&#39;name&#39;]       # 文件名 <br />
+$_FILES[&#39;upLoadFile&#39;][&#39;tmp_name&#39;]   # 临时文件路径<br />
+$_FILES[&#39;upLoadFile&#39;][&#39;size&#39;]       # 文件大小<br />
+$_FILES[&#39;upLoadFile&#39;][&#39;type&#39;]       # 上传的文件类型<br />
 $_FILES[&#39;upLoadFile&#39;][&#39;error&#39;]      # 错误信息 [0,1,2,3,4,6,7]<br/>
-[0]       # 没有错误,上传成功
-[1]       # 上传文件超过了限制,PHP.INI , upload_max_filesize 
-[2]       # 上传文件大小超过HTML 表单中  max_file_size 选项的值
-[3]       # 文件只有部分被上传
-[4]       # 没有文件被上传
-[6]       # 找不到临时文件路径
-[7]       # 文件写入失败
-[需要特别注意的是0,1,4]</p><p>sleep()                 # 休眠
-move_uploaded_file()    # 移动文件
-upload_max_filesize     # 设置上传大小
-post_max_size	          # post 文件上传大小限制
-max_file_uploads        # 最大上传文件的个数
-uniqid()                # 生成世界唯一的ID</p><h6><a name='header-n220' class='md-header-anchor '></a>############################ cookie  session</h6><p>setcookie(&quot;username&quot;,&#39;admin&#39;)     # 
+[0]       # 没有错误,上传成功<br/>
+[1]       # 上传文件超过了限制,PHP.INI , upload_max_filesize <br/>
+[2]       # 上传文件大小超过HTML 表单中  max_file_size 选项的值<br/>
+[3]       # 文件只有部分被上传<br/>
+[4]       # 没有文件被上传<br/>
+[6]       # 找不到临时文件路径<br/>
+[7]       # 文件写入失败<br/>
+[需要特别注意的是0,1,4]</p><p>sleep()                 # 休眠<br/>
+move_uploaded_file()    # 移动文件<br/>
+upload_max_filesize     # 设置上传大小<br/>
+post_max_size	          # post 文件上传大小限制<br/>
+max_file_uploads        # 最大上传文件的个数<br/>
+uniqid()                # 生成世界唯一的ID</p><h6><a name='header-n220' class='md-header-anchor '></a>############################ cookie  session</h6><p>setcookie(&quot;username&quot;,&#39;admin&#39;)     # <br/>
 $_COOKIE[&quot;username&quot;]              #<br/>
-session_start()                   # 
-$_SESSION[]
-session_destroy()   <br/></p><h6><a name='header-n227' class='md-header-anchor '></a>########################### 面向对象</h6><p>new                               # 
-__construct()                     # 构造函数
-__destruct()                      # 析构函数
+session_start()                   # <br/>
+$_SESSION[]<br/>
+session_destroy()   <br/></p><h6><a name='header-n227' class='md-header-anchor '></a>########################### 面向对象</h6><p>new                               # <br/>
+__construct()                     # 构造函数<br/>
+__destruct()                      # 析构函数<br/>
 static                            # 静态     <br/>
-<strong>FUNCTION</strong>	                    # 获取函数名
-<strong>METHOD</strong>                        # 输出 [Db::index] 当前方法名
-$this	                            # 只代表本类
-self	                            # 代表自己, self:: 
-parent	                          # 父类访问
-public                            # 权限修饰符:公共的
-protected	                        # 权限修饰符:受保护的
-private	                          # 权限修饰符:私有的
-extends	                          # 类的继承
-interface	                        # 接口| 接口继承也用 extends
-implements	                      # 类实现接口,  implements A,B,C
+<strong>FUNCTION</strong>	                    # 获取函数名<br/><br/>
+<strong>METHOD</strong>                        # 输出 [Db::index] 当前方法名<br/>
+$this	                            # 只代表本类<br/>
+self	                            # 代表自己, self:: <br/>
+parent	                          # 父类访问<br/>
+public                            # 权限修饰符:公共的<br/>
+protected	                        # 权限修饰符:受保护的<br/>
+private	                          # 权限修饰符:私有的<br/>
+extends	                          # 类的继承<br/>
+interface	                        # 接口| 接口继承也用 extends<br/>
+implements	                      # 类实现接口,  implements A,B,C<br/>
 final	                            # 终类 <br/>
-abstract	                        # 抽象类,不能被实例化
-spl_autoload_register	            # 自动加载[__autoload]
-__clone()                         # 克隆
-__toString()                      # 当对象被echo 的时候调用
-__invoke()                        # 当对象被当成 函数调用的时候
-instanceof	                      # 判断当前对象是否是这个类 object instanceof class 的实例
-__get()                           # 用于获得一个不存在的或者不可访问的属性时
-__set()                           # 用于设置一个不存在或者不可以访问的属性时
-__isset()                         # 用户判断一个不存在或者不可访问的属性时
-__call()                          # 用于调用一个不存在或者不可访问的方法时
-__callStatic()                    # 用于调用一个不存在或者不可访问的[静态]方法时
-serialize()                       # 序列化
-unserialize()                     # 反序列化
-__sleep()                         # 序列化的时候调用
-__wakeup()                        # 反序列化的时候调用
-<strong>CLASS</strong>	                        # 获取类名
-<strong>NAMESPACE</strong>	                    # 获取命名空间
+abstract	                        # 抽象类,不能被实例化<br/>
+spl_autoload_register	            # 自动加载[__autoload]<br/>
+__clone()                         # 克隆<br/>
+__toString()                      # 当对象被echo 的时候调用<br/>
+__invoke()                        # 当对象被当成 函数调用的时候<br/>
+instanceof	                      # 判断当前对象是否是这个类 object instanceof class 的实例<br/>
+__get()                           # 用于获得一个不存在的或者不可访问的属性时<br/>
+__set()                           # 用于设置一个不存在或者不可以访问的属性时<br/>
+__isset()                         # 用户判断一个不存在或者不可访问的属性时<br/>
+__call()                          # 用于调用一个不存在或者不可访问的方法时<br/>
+__callStatic()                    # 用于调用一个不存在或者不可访问的[静态]方法时<br/>
+serialize()                       # 序列化<br/>
+unserialize()                     # 反序列化<br/>
+__sleep()                         # 序列化的时候调用<br/>
+__wakeup()                        # 反序列化的时候调用<br/>
+<strong>CLASS</strong>	                        # 获取类名<br/>
+<strong>NAMESPACE</strong>	                    # 获取命名空间<br/>
   </pre>
 </div>
 </body>
